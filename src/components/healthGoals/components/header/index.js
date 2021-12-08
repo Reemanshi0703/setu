@@ -27,9 +27,9 @@ const Header = ({ onClick }) => {
                   onClick={() => {
                     onItemClick(item.name)
                   } }
-                  className="my-slick"
+                  className={`my-slick ${item.name === activeItem ? "active-item": ""}`}
                 >
-                  <img src={item.name === activeItem ? item.img : item.inActive} alt="icon" />
+                  <img src={item.name === activeItem ? item.activeImg : item.inActiveImg} alt="icon" />
                   <span className="menu-name">{item.name}</span>
                 </div>
               );

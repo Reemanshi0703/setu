@@ -19,7 +19,7 @@ export const itemArray = [
   { name: "sleep", activeImg: sleep, inActiveImg: sleepInactive},
   { name: "weight", activeImg: tummy, inActiveImg: tummyInactive},
   { name: "bestSeller", activeImg: bestSellers, inActiveImg: bestSellersInactive},
-  { name: "hair", activeImg: tummy, inActiveImg: tummyInactive},
+  { name: "hair", activeImg: hair, inActiveImg: hairInactive},
 ];
 
 export const getCardSliderSettings = (length) => {
