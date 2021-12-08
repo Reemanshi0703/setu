@@ -1,4 +1,28 @@
 
+.slick-list {
+  width: 76% !important;
+  margin: 0 auto !important;
+}
+.slick-next {
+  background: none !important;
+  width: 8px !important;
+  height: 16px !important;
+  right: 46px !important;
+  &::before {
+      color: #000 !important;
+      opacity: 0.5 !important;
+  }
+}
+.slick-prev {
+  background: none !important;
+  width: 8px !important;
+  height: 16px !important;
+  left: -7px !important;
+  &::before {
+      color: #000 !important;
+      opacity: 0.5 !important;
+  }
+}
 
 .card {
   // background-color: #f2f2f2;

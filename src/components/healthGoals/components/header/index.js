@@ -21,7 +21,7 @@ function NavigationBar({changeType}) {
               {itemArray.map((item)=>{
                 return <>
                 <NavItem onClick={()=>{changeType(item)}}>
-                <NavLink to="/"><img src={menuIcon} alt="icon" /><span className="menu-name">{item}</span></NavLink>
+                <NavLink to="/" className="active"><img src={menuIcon} alt="icon" /><span className="menu-name">{item}</span></NavLink>
               </NavItem>
                 </>
               })}

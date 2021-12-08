@@ -9,9 +9,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: column;
         
         .navbar-brand {
             font-size: 28px;
+            margin: 10px 0px 15px 0px;
+            display: inline-block;
             .bold-logo {
                 font-weight: 700;
             }
@@ -46,8 +49,9 @@
                 padding: 20px 20px;
                 text-transform: uppercase;
                 text-align: center;
-                &:hover {
-                    // font-weight: 700;
+                &.active {
+                    background-color: #fff;
+                    border-radius: 100px;
                 }
             }
             .menu-name {
