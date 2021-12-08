@@ -7,21 +7,19 @@ import "../../assets/styles/main.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import data from "./utils";
-import leftArrow from "../../assets/images/left.png";
-import rightArrow from "../../assets/images/right.png";
 
-function SampleNextArrow(props) {
+const SampleNextArrow = (props) => {
   const { className, style, onClick } = props;
   return (
     <div
       className={`${className} slick-next`}
-      style={{ ...style, display: "block"}}
+      style={{ ...style, display: "block" }}
       onClick={onClick}
     />
   );
-}
+};
 
-function SamplePrevArrow(props) {
+const SamplePrevArrow = (props) => {
   const { className, style, onClick } = props;
   return (
     <div
@@ -30,8 +28,8 @@ function SamplePrevArrow(props) {
       onClick={onClick}
     />
   );
-}
-function HealthGoals() {
+};
+const HealthGoals = () => {
   const [dataToDisplay, SetDataToDisplay] = useState(data.eye);
   const changeType = (type) => {
     SetDataToDisplay(data[type]);
@@ -77,7 +75,6 @@ function HealthGoals() {
           {dataToDisplay.map((item, index) => {
             return <CardComponent key={index} {...item} />;
           })}
-          
         </Slider>
       </div>
     </div>
