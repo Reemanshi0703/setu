@@ -22,7 +22,7 @@ const CardComponent = ({
   flavour,
 }) => {
   return (
-    <Col xl="12" className="my-5">
+    <Col xl="12">
       <Card>
         <div className="flavour-wrapper">
           <CardImg src={cardImg} alt="Card image cap" top width="100%" />

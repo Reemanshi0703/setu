@@ -66,11 +66,14 @@ const NavigationBar = ({ changeType }) => {
   return (
     <>
       <Container fluid>
+        <div className="main-header">
+
+    
         <div className="navbar-brand">
           <span className="bold-logo">Health</span>
           <span className="normal-logo">Goals</span>
         </div>
-      </Container>
+
 
       <Slider {...settings} ref={sliderRef} className="header">
         {itemArray.map((item, index) => {
@@ -90,6 +93,8 @@ const NavigationBar = ({ changeType }) => {
           );
         })}
       </Slider>
+      </div>
+      </Container>
     </>
   );
 }
