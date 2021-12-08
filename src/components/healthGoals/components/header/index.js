@@ -66,34 +66,30 @@ const NavigationBar = ({ changeType }) => {
   return (
     <>
       <Container fluid>
-        <div className="main-header">
-
-    
-        <div className="navbar-brand">
-          <span className="bold-logo">Health</span>
-          <span className="normal-logo">Goals</span>
+        <div className="main-header mb-4">
+          <div className="navbar-brand">
+            <span className="bold-logo">Health</span>
+            <span className="normal-logo">Goals</span>
+          </div>
+          <Slider {...settings} ref={sliderRef} className="header">
+            {itemArray.map((item, index) => {
+              return (
+                <div
+                className="navbar-slick-list"
+                  key={index}
+                  onClick={() => {
+                    changeType(item.name)
+                    onItemClick(index)
+                  } }
+                  className={index === activeItem ? "active my-slick" : "my-slick"}
+                >
+                  <img src={item.img} alt="icon" />
+                  <span className="menu-name">{item.name}</span>
+                </div>
+              );
+            })}
+          </Slider>
         </div>
-
-
-      <Slider {...settings} ref={sliderRef} className="header">
-        {itemArray.map((item, index) => {
-          return (
-            <div
-            className="navbar-slick-list"
-              key={index}
-              onClick={() => {
-                changeType(item.name)
-                onItemClick(index)
-              } }
-              className={index === activeItem ? "active my-slick" : "my-slick"}
-            >
-              <img src={item.img} alt="icon" />
-              <span className="menu-name">{item.name}</span>
-            </div>
-          );
-        })}
-      </Slider>
-      </div>
       </Container>
     </>
   );
