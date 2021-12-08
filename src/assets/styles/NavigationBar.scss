@@ -1,5 +1,4 @@
 
-
  .navbar-brand {
     margin: 0 auto;
     font-size: 36px;
@@ -16,110 +15,53 @@
         font-weight: 500;
     }
 }
-
 .header {
     background-color: #FBFAFA;
     padding: 12px 0px;
     .slick-slide {
         padding: 10px 0px;
         text-transform: uppercase;
-        width: 130px !important;
+        width: 97px !important;
         margin: 28px;
         text-align: center;
           filter: grayscale(100%);
-                    -webkit-filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        @media (max-width: 480px) {
+            margin: 14px;
+        }
                  
         &.slick-center {
             background-color: #fff;
-            padding: 20px;
             border-radius: 60px;
             filter: grayscale(0) !important;
             -webkit-filter: grayscale(0) !important;
         }
         .my-slick {
             margin: 0 auto;
-            display: inline-block;
-            text-align: center;      
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;    
             .menu-name {
                 padding-top: 24px;
                 display: inline-block;
             }
         }
-        
+    }
+    .slick-list {
+        width: 57%!important;
+        margin: 0 auto !important;
+        @media (max-width: 480px) {
+            width: 100% !important;
+            height: 170px;
+        }
+        @media (min-width: 576px) and (max-width: 768px) {
+            width: 77% !important;
+        }
+        @media (min-width: 769px) and (max-width: 1024px) {
+            width: 71% !important;
+            height: 200px !important;
+        }
     }
 }
 
-
-// .navbar-light {
-//     background-color: #f2f2f2;
-//     padding: 10px 10px;
-//     @media only screen and (max-width: 768px) {
-//         overflow-x: scroll;
-//     }
-//     .menu-container {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         flex-direction: column;
-//         margin-right: auto;
-//         margin-left: auto;
-//         padding-right: 10px;
-//         padding-left: 10px;
-//         .navbar-brand {
-//             font-size: 28px;
-//             margin: 10px 0px 15px 0px;
-//             display: inline-block;
-//             text-align: center;
-//             .bold-logo {
-//                 font-weight: 700;
-//             }
-//             .normal-logo {
-//                 font-weight: 500;
-//             }
-//         }
-        
-//         .navbar-nav {
-//             &.ml-auto {
-//                 margin-left: 0 auto;
-//             }
-//             @media only screen and (max-width: 768px) {
-//                 flex-direction: row;
-//             }
-//             .nav-item {
-//                 margin: 0px 60px;
-//                 filter: grayscale(100%);
-//                     -webkit-filter: grayscale(100%);
-//                     transition: 0.5s all ease-in-out;
-//                     -webkit-transition: 0.5s all ease-in-out;
-//                 @media (max-width: 480px) {
-//                     margin: 0px 30px;
-//                 }   
-//                 @media (min-width: 769px) and (max-width: 1024px) {
-//                     margin: 0px 20px;
-//                 } 
-//                 &:hover {
-//                     background-color: #fff;
-//                     border-radius: 40px;
-//                     transition: 0.7s all ease-in-out;
-//                     cursor: pointer;
-//                     filter: grayscale(0);
-//                     -webkit-filter: grayscale(0);
-//                 }
-//             }
-//             .nav-link {
-//                 padding: 20px 20px;
-//                 text-transform: uppercase;
-//                 text-align: center;
-//                 &.active {
-//                     background-color: #fff;
-//                     border-radius: 100px;
-//                 }
-//             }
-//             .menu-name {
-//                 display: block;
-//                 padding: 20px 0px 14px 0px;
-//             }
-//         }
-//     }
-// }
 

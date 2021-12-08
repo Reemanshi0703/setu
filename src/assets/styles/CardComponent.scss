@@ -1,9 +1,10 @@
 
-.slick-list {
-  width: 79% !important;
-  margin: 0 auto !important;
-  
-}
+.card-slider {
+  .slick-list {
+    width: 79% !important;
+    margin: 0 auto !important;
+  }
+
 .slick-next {
   background: none;
   width: 8px !important;
@@ -230,4 +231,4 @@
     }
   }
 }
-
+}

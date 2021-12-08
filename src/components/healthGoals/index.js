@@ -70,7 +70,7 @@ const HealthGoals = () => {
   return (
     <div className="App">
       <NavigationBar changeType={changeType} />
-      <div className="container">
+      <div className="container card-slider">
         <Slider {...settings}>
           {dataToDisplay.map((item, index) => {
             return <CardComponent key={index} {...item} />;

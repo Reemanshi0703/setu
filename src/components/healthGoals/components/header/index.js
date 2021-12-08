@@ -76,6 +76,7 @@ const NavigationBar = ({ changeType }) => {
         {itemArray.map((item, index) => {
           return (
             <div
+            className="navbar-slick-list"
               key={index}
               onClick={() => {
                 changeType(item.name)
