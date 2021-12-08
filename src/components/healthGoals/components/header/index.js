@@ -8,21 +8,78 @@ import {
   Container,
 } from "reactstrap";
 import menuIcon from "../../../../assets/images/js-logo.png";
+import Slider from "react-slick";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../../../../assets/styles/main.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const itemArray = ["bestsellers", "eye", "skin", "sleep", "tummy", "weight", "tummy"];
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={`${className} slick-next`}
+        style={{ ...style, display: "block", background: "green" }}
+        onClick={onClick}
+      />
+    );
+  }
+  
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={`${className} slick-prev`}
+        style={{ ...style, display: "block", background: "green" }}
+        onClick={onClick}
+      />
+    );
+  }
+const itemArray = ["tummy", "eye", "skin", "sleep", "weight", "health", "hair"];
+const settings = {
+    centerMode: true,
 
-function NavigationBar({ changeType }) {
-  let scrollRefRecords = useRef({});
-  itemArray.forEach((item) => {
-    scrollRefRecords.current[item] = React.createRef();
-  });
-  const scroll = (item) => {
-    scrollRefRecords.current[item].current.scrollIntoView({ inline: "center" });
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
+function NavigationBar({ changeType }) {
+  let sliderRef = useRef(null);
+
+  const onItemClick = (index) => {
+    sliderRef.current.slickGoTo(index, true)
+  }
+
   return (
     <>
-      <Navbar expand="md" light>
-        <Container fluid className="menu-container">
+      {/* <Navbar expand="md" light>
+        <Container className="menu-container">
           <div>
             <NavbarBrand to="/" className="navbar-brand">
               <span className="bold-logo">Health</span>{" "}
@@ -50,9 +107,17 @@ function NavigationBar({ changeType }) {
                 );
               })}
             </Nav>
+        
           </div>
         </Container>
-      </Navbar>
+      </Navbar> */}
+      <Slider {...settings} ref={sliderRef}>
+          {itemArray.map((item, index) => {
+            return <div key={index} onClick={() => onItemClick(index)}><img src={menuIcon} alt="icon" />
+            <span className="menu-name">{item}</span>
+            </div>;
+          })}
+        </Slider>
     </>
   );
 }
