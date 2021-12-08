@@ -50,7 +50,7 @@ const NavigationBar = ({ changeHealthType }) => {
     setActiveItem(item);
     changeHealthType(item);
   };
-
+console.log("activeItem===>",activeItem)
   return (
     <>
       <Container fluid>
@@ -63,12 +63,11 @@ const NavigationBar = ({ changeHealthType }) => {
             {itemArray.map((item, index) => {
               return (
                 <div
-                className="navbar-slick-list"
-                  key={index}
+                  key={item.name}
                   onClick={() => {
                     onItemClick(item.name)
                   } }
-                  className={item.name === activeItem ? "active my-slick" : "my-slick"}
+                  className={`my-slick ${item.name === activeItem ? 'active-item': ""}`}
                 >
                   <img src={item.img} alt="icon" />
                   <span className="menu-name">{item.name}</span>
