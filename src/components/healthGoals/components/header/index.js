@@ -2,65 +2,53 @@ import React, { useRef, useState } from "react";
 import {
   Container,
 } from "reactstrap";
-import bestSellers from "../../../../assets/images/bestsellers.png";
-import eye from "../../../../assets/images/eye.png";
-import skin from "../../../../assets/images/eye-skin.png";
-import sleep from "../../../../assets/images/sleep.png";
-import tummy from "../../../../assets/images/tummy.png";
+import {itemArray} from "../../utils";
 import Slider from "react-slick";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../../../assets/styles/main.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const itemArray = [
-  {name:"tummy", img: bestSellers },
-  {name:"eye", img: eye },  
-  {name:"skin", img: skin }, 
-  {name:"sleep", img: sleep }, 
-  {name:"weight", img: tummy },
-  {name:"health", img: tummy }, 
-  {name:"hair", img: tummy }
-];
 const settings = {
   centerMode: true,
-
   dots: false,
-  infinite: true,
+  slidesToShow: 7,
   speed: 500,
-  slidesToShow: 5,
   slidesToScroll: 1,
+  infinite: true,
   arrows: false,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 5,
+        infinite: false,
+        slidesToShow: 7,
         slidesToScroll: 1,
       },
     },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 7,
         slidesToScroll: 1,
+        infinite: true,
       },
     },
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
+        focusOnSelect: true,
       },
     },
   ],
 };
-const NavigationBar = ({ changeType }) => {
-  let sliderRef = useRef(null);
-  const [activeItem, setActiveItem] = useState(0);
-  const onItemClick = (index) => {
-    setActiveItem(index);
-    sliderRef.current.slickGoTo(index, true);
+const NavigationBar = ({ changeHealthType }) => {
+  const [activeItem, setActiveItem] = useState(itemArray[1]);
+  const onItemClick = (item) => {
+    setActiveItem(item);
+    changeHealthType(item);
   };
 
   return (
@@ -71,17 +59,16 @@ const NavigationBar = ({ changeType }) => {
             <span className="bold-logo">Health</span>
             <span className="normal-logo">Goals</span>
           </div>
-          <Slider {...settings} ref={sliderRef} className="header">
+          <Slider {...settings} className="header">
             {itemArray.map((item, index) => {
               return (
                 <div
                 className="navbar-slick-list"
                   key={index}
                   onClick={() => {
-                    changeType(item.name)
-                    onItemClick(index)
+                    onItemClick(item.name)
                   } }
-                  className={index === activeItem ? "active my-slick" : "my-slick"}
+                  className={item.name === activeItem ? "active my-slick" : "my-slick"}
                 >
                   <img src={item.img} alt="icon" />
                   <span className="menu-name">{item.name}</span>
