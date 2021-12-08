@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/styles/main.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import data from "./utils";
+import {data} from "./utils";
 
 const SampleNextArrow = (props) => {
   const { className, style, onClick } = props;
@@ -30,9 +30,9 @@ const SamplePrevArrow = (props) => {
   );
 };
 const HealthGoals = () => {
-  const [dataToDisplay, SetDataToDisplay] = useState(data.eye);
-  const changeType = (type) => {
-    SetDataToDisplay(data[type]);
+  const [dataToDisplay, setDataToDisplay] = useState(data.eye);
+  const changeHealthType = (type) => {
+    setDataToDisplay(data[type]);
   };
   const settings = {
     dots: false,
@@ -69,7 +69,7 @@ const HealthGoals = () => {
 
   return (
     <div className="App">
-      <NavigationBar changeType={changeType} />
+      <NavigationBar changeHealthType={changeHealthType} />
       <div className="container card-slider">
         <Slider {...settings}>
           {dataToDisplay.map((item, index) => {

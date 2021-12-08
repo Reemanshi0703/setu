@@ -1,6 +1,21 @@
 import skinIcon from "../../assets/images/skin.png";
+import bestSellers from "../../assets/images/bestsellers.png";
+import eye from "../../assets/images/eye.png";
+import skin from "../../assets/images/eye-skin.png";
+import sleep from "../../assets/images/sleep.png";
+import tummy from "../../assets/images/tummy.png";
 
-const data = {
+export const itemArray = [
+    {name:"tummy", img: bestSellers },
+    {name:"eye", img: eye },  
+    {name:"skin", img: skin }, 
+    {name:"sleep", img: sleep }, 
+    {name:"weight", img: tummy },
+    {name:"health", img: tummy }, 
+    {name:"hair", img: tummy }
+  ];
+
+  export const data = {
     eye: [
         {
             "id": 1,
@@ -390,4 +405,3 @@ const data = {
         }
     ]
 }
-export default data;
