@@ -1,7 +1,7 @@
 import { Col, Card, CardImg, CardTitle, CardBody, CardText, Button, Input } from "reactstrap";
-import skinIcon from "../assets/images/skin.png";
-import starIcon from "../assets/images/star.png";
-import cardImg from "../assets/images/card-img.png";
+import skinIcon from "../../../../assets/images/skin.png";
+import starIcon from "../../../../assets/images/star.png";
+import cardImg from "../../../../assets/images/card-img.png";
 
 function CardComponent({ description , discount, id, photoUrl, price, rating, title}) {
   return (

@@ -1,6 +1,6 @@
 
 import { Navbar, NavbarBrand, NavItem, NavLink, Nav, Container } from "reactstrap";
-import menuIcon from "../assets/images/js-logo.png"
+import menuIcon from "../../../../assets/images/js-logo.png"
 
 function NavigationBar({changeType}) {
   const itemArray = ["tummy","eye", "skin", "sleep", "weight" ]
@@ -21,7 +21,7 @@ function NavigationBar({changeType}) {
               {itemArray.map((item)=>{
                 return <>
                 <NavItem onClick={()=>{changeType(item)}}>
-                <NavLink to="/" className="active"><img src={menuIcon} alt="icon" /><span className="menu-name">{item}</span></NavLink>
+                <NavLink to="/"><img src={menuIcon} alt="icon" /><span className="menu-name">{item}</span></NavLink>
               </NavItem>
                 </>
               })}
