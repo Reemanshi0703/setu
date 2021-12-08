@@ -7,7 +7,13 @@ import {
   Nav,
   Container,
 } from "reactstrap";
+import bestSellers from "../../../../assets/images/bestsellers.png";
 import menuIcon from "../../../../assets/images/js-logo.png";
+import eye from "../../../../assets/images/eye.png";
+import skin from "../../../../assets/images/eye-skin.png";
+import sleep from "../../../../assets/images/sleep.png";
+import tummy from "../../../../assets/images/tummy.png";
+
 import Slider from "react-slick";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../../../assets/styles/main.scss";
@@ -36,7 +42,14 @@ function SampleNextArrow(props) {
     );
   }
 const itemArray = [
-  {name:"tummy", img: menuIcon },  {name:"eye", img: menuIcon },  {name:"skin", img: menuIcon }, {name:"sleep", img: menuIcon }, {name:"weight", img: menuIcon }, {name:"health", img: menuIcon }, {name:"hair", img: menuIcon }];
+  {name:"tummy", img: bestSellers },
+  {name:"eye", img: eye },  
+  {name:"skin", img: skin }, 
+  {name:"sleep", img: sleep }, 
+  {name:"weight", img: tummy },
+  {name:"health", img: tummy }, 
+  {name:"hair", img: tummy }
+];
 const settings = {
     centerMode: true,
 
@@ -123,8 +136,10 @@ function NavigationBar({ changeType }) {
       <Slider {...settings} ref={sliderRef} className="header">
           {itemArray.map((item, index) => {
             return <div key={index} onClick={() => onItemClick(index)}>
+              <div className="my-slick">
               <img src={item.img} alt="icon" />
-            <span className="menu-name">{item.name}</span>
+              <span className="menu-name">{item.name}</span>
+              </div>
             </div>;
           })}
         </Slider>

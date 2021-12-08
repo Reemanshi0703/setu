@@ -2,15 +2,15 @@
 
  .navbar-brand {
     margin: 0 auto;
-    font-size: 28px;
-    // margin: 10px 0px 15px 0px;
+    font-size: 36px;
     display: inline-block;
     width: 100%;
     text-align: center;
     background-color: #FBFAFA;
-    padding: 20px 0px;
+    padding-top: 17px;
     .bold-logo {
         font-weight: 700;
+        margin-right: 7px;
     }
     .normal-logo {
         font-weight: 500;
@@ -20,6 +20,33 @@
 .header {
     background-color: #FBFAFA;
     padding: 12px 0px;
+    .slick-slide {
+        padding: 10px 0px;
+        text-transform: uppercase;
+        width: 130px !important;
+        margin: 28px;
+        text-align: center;
+          filter: grayscale(100%);
+                    -webkit-filter: grayscale(100%);
+                 
+        &.slick-center {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 60px;
+            filter: grayscale(0) !important;
+            -webkit-filter: grayscale(0) !important;
+        }
+        .my-slick {
+            margin: 0 auto;
+            display: inline-block;
+            text-align: center;      
+            .menu-name {
+                padding-top: 24px;
+                display: inline-block;
+            }
+        }
+        
+    }
 }
 
 
