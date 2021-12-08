@@ -9,7 +9,7 @@ import {
 } from "reactstrap";
 import menuIcon from "../../../../assets/images/js-logo.png";
 
-const itemArray = ["tummy", "eye", "skin", "sleep", "weight"];
+const itemArray = ["bestsellers", "eye", "skin", "sleep", "tummy", "weight", "tummy"];
 
 function NavigationBar({ changeType }) {
   let scrollRefRecords = useRef({});
@@ -22,7 +22,7 @@ function NavigationBar({ changeType }) {
   return (
     <>
       <Navbar expand="md" light>
-        <Container className="menu-container">
+        <Container fluid className="menu-container">
           <div>
             <NavbarBrand to="/" className="navbar-brand">
               <span className="bold-logo">Health</span>{" "}

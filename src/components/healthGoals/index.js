@@ -7,13 +7,15 @@ import "../../assets/styles/main.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import data from "./utils";
+import leftArrow from "../../assets/images/left.png";
+import rightArrow from "../../assets/images/right.png";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
       className={`${className} slick-next`}
-      style={{ ...style, display: "block", background: "green" }}
+      style={{ ...style, display: "block"}}
       onClick={onClick}
     />
   );
@@ -24,7 +26,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={`${className} slick-prev`}
-      style={{ ...style, display: "block", background: "green" }}
+      style={{ ...style, display: "block" }}
       onClick={onClick}
     />
   );
@@ -75,6 +77,7 @@ function HealthGoals() {
           {dataToDisplay.map((item, index) => {
             return <CardComponent key={index} {...item} />;
           })}
+          
         </Slider>
       </div>
     </div>

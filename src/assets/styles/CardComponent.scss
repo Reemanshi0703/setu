@@ -1,35 +1,72 @@
 
 .slick-list {
-  width: 76% !important;
+  width: 79% !important;
   margin: 0 auto !important;
+  
 }
 .slick-next {
-  background: none !important;
+  background: none;
   width: 8px !important;
   height: 16px !important;
   right: 46px !important;
+  @media (min-width: 320px) and (max-width: 375px) {
+    right: 7px !important;
+  }
+  @media (min-width: 375px) and (max-width: 414px) {
+    right: 8px !important;
+  }
+  @media (min-width: 414px) and (max-width: 480px) {
+    right: 15px !important;
+  }
   &::before {
-      color: #000 !important;
+      color: transparent !important;
       opacity: 0.5 !important;
+      color: transparent !important;
+      opacity: 0.5 !important;
+      background-image: url('../images/right.png');
+      background-repeat: no-repeat;
   }
 }
 .slick-prev {
-  background: none !important;
   width: 8px !important;
   height: 16px !important;
   left: -7px !important;
+  @media (min-width: 320px) and (max-width: 375px) {
+    left: 0 !important;
+  }
+  @media (min-width: 375px) and (max-width: 414px) {
+    left: 5px !important;
+  }
+  @media (min-width: 414px) and (max-width: 480px) {
+    left: 6px !important;
+  }
   &::before {
-      color: #000 !important;
+      color: transparent !important;
       opacity: 0.5 !important;
+      background-image: url('../images/left.png');
+      background-repeat: no-repeat;
   }
 }
 
 .card {
-  // background-color: #f2f2f2;
-  border-radius: 20px;
-  border: 1px solid #e1e1e1;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1px solid #EEEDED;
   border-bottom-color: #fff;
   width: 300px;
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+  @media (min-width: 501px) and (max-width: 768px) {
+    width: 258px;
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    width: 90%;
+  }
+  @media (min-width: 1025px) and (max-width: 1600px) {
+    width: 90%;
+  }
   @media only screen and (max-width: 768px) {
     margin-bottom: 20px;
   }
@@ -62,25 +99,11 @@
       font-size: 10px;
       line-height: 12px;
       color: #F36400;
-      @media (max-width: 320px) {
-        padding: 6px 13px 8px 13px;
-        font-size: 12px;
-        left: 57%;
+      @media (min-width: 320px) and (max-width: 375px) {
+        left: 58%;
       }
-      @media (max-width: 375px) {
-        padding: 6px 13px 8px 13px;
-        font-size: 12px;
-        left: 63%;
-      }
-      @media (max-width: 414px) {
-        padding: 6px 13px 8px 13px;
-        font-size: 14px;
-        left: 64%;
-      }
-      @media (max-width: 480px) {
-        padding: 6px 13px 8px 13px;
-        font-size: 14px;
-        left: 68%;
+      @media (min-width: 375px) and (max-width: 414px) {
+        left: 67%;
       }
       @media (min-width: 489px) and (max-width: 576px) {
         left: 64%;
@@ -170,7 +193,7 @@
       width: 80%;
       .form-select {
         width: 100%;
-        border-bottom-left-radius: 15px;
+        border-bottom-left-radius: 28px;
         border-bottom-right-radius: 0px;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
@@ -178,7 +201,9 @@
         border-right-color: #fff;
         border-right: 0;
         font-size: 14px;
+        border-left: 0;
         height: 40px;
+        border-color: #EEEDED;
       }
     }
     .bottom-cart-right {
@@ -192,6 +217,12 @@
         height: 40px;
         font-size: 16px;
         background-color: #000;
+        @media (min-width: 320px) and (max-width: 375px) {
+          font-size: 10px;
+        }
+        @media (min-width: 769px) and (max-width: 1024px) {
+          font-size: 10px;
+        }
       }
       @media (min-width: 768px) and (max-width: 992px) {
         width: 33%;

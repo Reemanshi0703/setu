@@ -10,11 +10,15 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 10px;
+        padding-left: 10px;
         .navbar-brand {
             font-size: 28px;
             margin: 10px 0px 15px 0px;
             display: inline-block;
+            text-align: center;
             .bold-logo {
                 font-weight: 700;
             }
@@ -31,11 +35,17 @@
                 flex-direction: row;
             }
             .nav-item {
-                margin: 0px 40px;
+                margin: 0px 60px;
                 filter: grayscale(100%);
                     -webkit-filter: grayscale(100%);
                     transition: 0.5s all ease-in-out;
                     -webkit-transition: 0.5s all ease-in-out;
+                @media (max-width: 480px) {
+                    margin: 0px 30px;
+                }   
+                @media (min-width: 769px) and (max-width: 1024px) {
+                    margin: 0px 20px;
+                } 
                 &:hover {
                     background-color: #fff;
                     border-radius: 40px;
