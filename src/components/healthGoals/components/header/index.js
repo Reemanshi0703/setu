@@ -6,13 +6,14 @@ import Slider from "react-slick";
 const Header = ({ onClick }) => {
   const [isDesktop, setIsDesktop] = useState(false);
   useEffect(() => {
+    handleResize()
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
   const handleResize = () => {
-    if (window.innerWidth < 700) {
+    if (window.innerWidth < 750) {
       setIsDesktop(false);
     } else {
       setIsDesktop(true);
