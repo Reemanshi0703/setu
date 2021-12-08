@@ -19,7 +19,7 @@ const Header = ({ onClick }) => {
             <span className="bold-logo">Health</span>
             <span className="normal-logo">Goals</span>
           </div>
-          <Slider {...headerSliderSettings} className="header">
+          {/* <Slider {...headerSliderSettings} className="header">
             {itemArray.map((item) => {
               return (
                 <div
@@ -34,7 +34,18 @@ const Header = ({ onClick }) => {
                 </div>
               );
             })}
-          </Slider>
+          </Slider> */}
+          <div className="header-wrapper">
+          {itemArray.map((item)=>{
+            return (
+            <div className="header-menu">
+              <img src={item.name === activeItem ? item.activeImg : item.inActiveImg} alt="icon" />
+              <p className="menu-name">{item.name}</p>
+            </div>
+            )
+
+          })}
+          </div>
         </div>
       </Container>
     </>
