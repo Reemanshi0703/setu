@@ -9,7 +9,7 @@ function CardComponent({ description , discount, id, photoUrl, price, rating, ti
     <>
       {/* <Container>
         <Row className="mt-5"> */}
-          <Col xl="12" md="4" lg="4" className="justify-content-center">
+          <Col xl="12">
             <Card>
             <div className="flavour-wrapper">
               <CardImg src={cardImg} alt="Card image cap" top width="100%" />
