@@ -44,8 +44,6 @@
   display: flex !important;
   flex-direction: column;
   align-items: center;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
   img {
     @media (max-width: 576px) {
       width: 35px !important;
@@ -72,8 +70,6 @@
 }
 
 .active-item {
-  filter: grayscale(0) !important;
-  -webkit-filter: grayscale(0) !important;
   background: #fff;
   padding: 8px 0px 22px 0px;
   border-radius: 100px;
