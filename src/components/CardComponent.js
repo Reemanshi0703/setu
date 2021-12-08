@@ -8,7 +8,7 @@ function CardComponent({ description , discount, id, photoUrl, price, rating, ti
     <>
       {/* <Container>
         <Row className="mt-5"> */}
-          <Col xl="4" md="4" lg="4">
+          <Col xl="12" md="4" lg="4">
             <Card>
             <div className="flavour-wrapper">
               <CardImg src="https://picsum.photos/256/186" alt="Card image cap" top width="100%" />
@@ -69,130 +69,6 @@ function CardComponent({ description , discount, id, photoUrl, price, rating, ti
               </CardBody>
             </Card>
           </Col>
-          {/* <Col xl="4" md="4" lg="4">
-            <Card>
-            <div className="flavour-wrapper">
-              <CardImg src="https://picsum.photos/256/186" alt="Card image cap" top width="100%" />
-              <Button className="change-flavour">
-                Change Flavour
-              </Button>
-            </div>
-              <CardBody>
-                <CardTitle tag="h5">
-                  Skin: Renew
-                </CardTitle>
-                <div className="skin-rating">
-                  <div className="skin-rating-left">
-                    <img src={skinIcon} alt="skin"  /> <span>Skin</span>
-                  </div>
-                  <div className="skin-rating-right">
-                    <span>4.5 <img src={starIcon} /></span>
-                  </div>
-                </div>
-                <CardText>
-                  This card has supporting text below as a natural lead-in to additional.
-                </CardText>
-                <div className="pricing">
-                  <div className="pricing-left">
-                    <span className="full-price">&#x20b9;640</span> <span className="price-cut">&#x20b9;800</span>
-                  </div>
-                  <div className="pricing-right">
-                    <span className="you-save">You Save:</span> <span className="red-price">&#x20b9;200(25%)</span>
-                  </div>
-                </div>
-              </CardBody>
-              <CardBody className="bottom-cart">
-                <div className="bottom-cart-left">
-                  <Input
-                    id="exampleSelect"
-                    name="select"
-                    type="select"
-                  >
-                    <option>
-                      120 gms
-                    </option>
-                    <option>
-                      130 gms
-                    </option>
-                    <option>
-                      140 gms
-                    </option>
-                    <option>
-                      150 gms
-                    </option>
-                  </Input>
-                  </div>
-                <div className="bottom-cart-right">
-                <Button className="add-btn">
-                  Add
-                </Button>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col xl="4" md="4" lg="4">
-            <Card>
-            <div className="flavour-wrapper">
-              <CardImg src="https://picsum.photos/256/186" alt="Card image cap" top width="100%" />
-              <Button className="change-flavour">
-                Change Flavour
-              </Button>
-            </div>
-              <CardBody>
-                <CardTitle tag="h5">
-                  Skin: Renew
-                </CardTitle>
-                <div className="skin-rating">
-                  <div className="skin-rating-left">
-                    <img src={skinIcon} alt="skin"  /> <span>Skin</span>
-                  </div>
-                  <div className="skin-rating-right">
-                    <span>4.5 <img src={starIcon} /></span>
-                  </div>
-                </div>
-                <CardText>
-                  This card has supporting text below as a natural lead-in to additional.
-                </CardText>
-                <div className="pricing">
-                  <div className="pricing-left">
-                    <span className="full-price">&#x20b9;640</span> <span className="price-cut">&#x20b9;800</span>
-                  </div>
-                  <div className="pricing-right">
-                    <span className="you-save">You Save:</span> <span className="red-price">&#x20b9;200(25%)</span>
-                  </div>
-                </div>
-              </CardBody>
-              <CardBody className="bottom-cart">
-                <div className="bottom-cart-left">
-                  <Input
-                    id="exampleSelect"
-                    name="select"
-                    type="select"
-                  >
-                    <option>
-                      120 gms
-                    </option>
-                    <option>
-                      130 gms
-                    </option>
-                    <option>
-                      140 gms
-                    </option>
-                    <option>
-                      150 gms
-                    </option>
-                  </Input>
-                  </div>
-                <div className="bottom-cart-right">
-                <Button className="add-btn">
-                  Add
-                </Button>
-                </div>
-              </CardBody>
-            </Card>
-          </Col> */}
-        {/* </Row>
-      </Container> */}
     </>
   )
 }
