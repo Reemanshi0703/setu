@@ -4,8 +4,8 @@ import eye from "../../assets/images/eye.png";
 import skin from "../../assets/images/eye-skin.png";
 import sleep from "../../assets/images/sleep.png";
 import tummy from "../../assets/images/tummy.png";
-
-import skinIconInactive from "../../assets/images/skin.png";
+import hair from "../../assets/images/Omega_Color.png";
+import hairInactive from "../../assets/images/Omega_Linear.png"
 import bestSellersInactive from "../../assets/images/BestSellerLinear.png";
 import eyeInactive from "../../assets/images/eyeLinear.png";
 import skinInactive from "../../assets/images/skinLinear.png";
@@ -13,13 +13,13 @@ import sleepInactive from "../../assets/images/sleepLinear.png";
 import tummyInactive from "../../assets/images/tummyLinear.png";
 
 export const itemArray = [
-  { name: "tummy", img: tummy, inActive: tummyInactive },
-  { name: "eye", img: eye , inActive: eyeInactive},
-  { name: "skin", img: skin , inActive: skinInactive},
-  { name: "sleep", img: sleep, inActive: sleepInactive},
-  { name: "weight", img: tummy, inActive: tummyInactive},
-  { name: "bestSeller", img: bestSellers, inActive: bestSellersInactive},
-  { name: "hair", img: tummy, inActive: tummyInactive},
+  { name: "tummy", activeImg: tummy, inActiveImg: tummyInactive },
+  { name: "eye", activeImg: eye , inActiveImg: eyeInactive},
+  { name: "skin", activeImg: skin , inActiveImg: skinInactive},
+  { name: "sleep", activeImg: sleep, inActiveImg: sleepInactive},
+  { name: "weight", activeImg: tummy, inActiveImg: tummyInactive},
+  { name: "bestSeller", activeImg: bestSellers, inActiveImg: bestSellersInactive},
+  { name: "hair", activeImg: tummy, inActiveImg: tummyInactive},
 ];
 
 export const getCardSliderSettings = (length) => {
