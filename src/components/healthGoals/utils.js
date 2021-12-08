@@ -49,7 +49,7 @@ const data = {
         {
             "id": 5,
             "photoUrl": skinIcon,
-            "title": "eye5",
+            "title": "Setu lean lite",
             "type": "Eye",
             "price": 100,
             "discount": 20,
@@ -60,7 +60,7 @@ const data = {
         {
             "id": 6,
             "photoUrl": skinIcon,
-            "title": "eye6",
+            "title": "Setu lean lite",
             "type": "Eye",
             "price": 100,
             "discount": 20,
@@ -74,7 +74,7 @@ const data = {
             "id": 7,
             "photoUrl": skinIcon,
             "type": "Hair",
-            "title": "hair1",
+            "title": "Setu lean lite",
             "price": 100,
             "discount": 20,
             "description": "Women's health combo for better hair quality and strength",
@@ -85,7 +85,7 @@ const data = {
             "id": 8,
             "photoUrl": skinIcon,
             "type": "Hair",
-            "title": "hair2",
+            "title": "Setu lean lite",
             "price": 100,
             "discount": 20,
             "description": "Women's health combo for better hair quality and strength",
@@ -95,7 +95,7 @@ const data = {
         {
             "id": 9,
             "photoUrl": skinIcon,
-            "title": "hair3",
+            "title": "Setu lean lite",
             "type": "Hair",
             "price": 100,
             "discount": 20,
@@ -106,7 +106,7 @@ const data = {
         {
             "id": 10,
             "photoUrl": skinIcon,
-            "title": "hair4",
+            "title": "Setu lean lite",
             "type": "Hair",
             "price": 100,
             "discount": 20,
@@ -117,7 +117,7 @@ const data = {
         {
             "id": 11,
             "photoUrl": skinIcon,
-            "title": "hair5",
+            "title": "Setu lean lite",
             "type": "Hair",
             "price": 100,
             "discount": 20,
@@ -128,7 +128,7 @@ const data = {
         {
             "id": 12,
             "photoUrl": skinIcon,
-            "title": "hair6",
+            "title": "Setu lean lite",
             "type": "Hair",
             "price": 100,
             "discount": 20,
@@ -141,7 +141,7 @@ const data = {
         {
             "id": 13,
             "photoUrl": skinIcon,
-            "title": "skin1",
+            "title": "Setu lean lite",
             "type": "Skin",
             "price": 100,
             "discount": 20,
@@ -152,7 +152,7 @@ const data = {
         {
             "id": 14,
             "photoUrl": skinIcon,
-            "title": "skin2",
+            "title": "Setu lean lite",
             "price": 100,
             "discount": 20,
             "type": "Skin",
@@ -163,7 +163,7 @@ const data = {
         {
             "id": 15,
             "photoUrl": skinIcon,
-            "title": "skin3",
+            "title": "Setu lean lite",
             "price": 100,
             "type": "Skin",
             "discount": 20,
@@ -174,7 +174,7 @@ const data = {
         {
             "id": 16,
             "photoUrl": skinIcon,
-            "title": "skin4",
+            "title": "Setu lean lite",
             "type": "Skin",
             "price": 100,
             "discount": 20,
@@ -187,7 +187,7 @@ const data = {
         {
             "id": 17,
             "photoUrl": skinIcon,
-            "title": "tummy1",
+            "title": "Setu lean lite",
             "price": 100,
             "type": "Tummy",
             "discount": 20,
@@ -198,7 +198,7 @@ const data = {
         {
             "id": 18,
             "photoUrl": skinIcon,
-            "title": "tummy2",
+            "title": "Setu lean lite",
             "type": "Tummy",
             "price": 100,
             "discount": 20,
@@ -209,7 +209,7 @@ const data = {
         {
             "id": 19,
             "photoUrl": skinIcon,
-            "title": "tummy2",
+            "title": "Setu lean lite",
             "type": "Tummy",
             "price": 100,
             "discount": 20,
@@ -220,7 +220,7 @@ const data = {
         {
             "id": 20,
             "photoUrl": skinIcon,
-            "title": "tummy2",
+            "title": "Setu lean lite",
             "type": "Tummy",
             "price": 100,
             "discount": 20,
@@ -233,7 +233,7 @@ const data = {
         {
             "id": 21,
             "photoUrl": skinIcon,
-            "title": "sleep1",
+            "title": "Setu lean lite",
             "type": "Tummy",
             "price": 100,
             "discount": 20,
@@ -244,7 +244,7 @@ const data = {
         {
             "id": 22,
             "photoUrl": skinIcon,
-            "title": "sleep2",
+            "title": "Setu lean lite",
             "type": "Tummy",
             "price": 100,
             "discount": 20,
@@ -255,7 +255,7 @@ const data = {
         {
             "id": 23,
             "photoUrl": skinIcon,
-            "title": "sleep2",
+            "title": "Setu lean lite",
             "type": "Tummy",
             "price": 100,
             "discount": 20,
@@ -266,7 +266,7 @@ const data = {
         {
             "id": 24,
             "photoUrl": skinIcon,
-            "title": "sleep2",
+            "title": "Setu lean lite",
             "type": "Tummy",
             "price": 100,
             "discount": 20,
@@ -279,7 +279,7 @@ const data = {
         {
             "id": 25,
             "photoUrl": skinIcon,
-            "title": "weight1",
+            "title": "Setu lean lite",
             "type": "Weight",
             "price": 100,
             "discount": 20,
@@ -290,7 +290,7 @@ const data = {
         {
             "id": 26,
             "photoUrl": skinIcon,
-            "title": "weight2",
+            "title": "Setu lean lite",
             "type": "Weight",
             "price": 100,
             "discount": 20,
@@ -301,7 +301,7 @@ const data = {
         {
             "id": 27,
             "photoUrl": skinIcon,
-            "title": "weight3",
+            "title": "Setu lean lite",
             "type": "Weight",
             "price": 100,
             "discount": 20,
@@ -312,7 +312,7 @@ const data = {
         {
             "id": 28,
             "photoUrl": skinIcon,
-            "title": "weight4",
+            "title": "Setu lean lite",
             "type": "Weight",
             "price": 100,
             "discount": 20,
@@ -323,7 +323,7 @@ const data = {
         {
             "id": 29,
             "photoUrl": skinIcon,
-            "title": "weight5",
+            "title": "Setu lean lite",
             "type": "Weight",
             "price": 100,
             "discount": 20,
@@ -336,7 +336,7 @@ const data = {
         {
             "id": 25,
             "photoUrl": skinIcon,
-            "title": "weight1",
+            "title": "Setu lean lite",
             "type": "Height",
             "price": 100,
             "discount": 20,
@@ -347,7 +347,7 @@ const data = {
         {
             "id": 26,
             "photoUrl": skinIcon,
-            "title": "weight2",
+            "title": "Setu lean lite",
             "type": "Height",
             "price": 100,
             "discount": 20,
@@ -358,7 +358,7 @@ const data = {
         {
             "id": 27,
             "photoUrl": skinIcon,
-            "title": "weight3",
+            "title": "Setu lean lite",
             "type": "Height",
             "price": 100,
             "discount": 20,
@@ -369,7 +369,7 @@ const data = {
         {
             "id": 28,
             "photoUrl": skinIcon,
-            "title": "weight4",
+            "title": "Setu lean lite",
             "type": "Height",
             "price": 100,
             "discount": 20,
@@ -380,7 +380,7 @@ const data = {
         {
             "id": 29,
             "photoUrl": skinIcon,
-            "title": "weight5",
+            "title": "Setu lean lite",
             "type": "Height",
             "price": 100,
             "discount": 20,
