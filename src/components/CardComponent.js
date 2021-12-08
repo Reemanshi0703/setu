@@ -8,7 +8,7 @@ function CardComponent({ description , discount, id, photoUrl, price, rating, ti
     <>
       {/* <Container>
         <Row className="mt-5"> */}
-          <Col xl="12" md="4" lg="4">
+          <Col xl="12">
             <Card>
             <div className="flavour-wrapper">
               <CardImg src="https://picsum.photos/256/186" alt="Card image cap" top width="100%" />
