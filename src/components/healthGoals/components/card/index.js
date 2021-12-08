@@ -5,7 +5,7 @@ import cardImg from "../../../../assets/images/card-img.png";
 
 function CardComponent({ description , discount, id, photoUrl, price, rating, title}) {
   return (
-          <Col xl="12">
+          <Col xl="12" className="my-5">
             <Card>
             <div className="flavour-wrapper">
               <CardImg src={cardImg} alt="Card image cap" top width="100%" />

@@ -13,7 +13,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={`${className} slick-next`}
-      style={{ ...style, display: "block" }}
+      style={{ ...style, display: "block" , background: "green"}}
       onClick={onClick}
     />
   );
