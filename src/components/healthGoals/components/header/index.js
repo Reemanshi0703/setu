@@ -71,6 +71,7 @@ const NavigationBar = ({ changeType }) => {
             <span className="bold-logo">Health</span>
             <span className="normal-logo">Goals</span>
           </div>
+          <Container>
           <Slider {...settings} ref={sliderRef} className="header">
             {itemArray.map((item, index) => {
               return (
@@ -89,6 +90,7 @@ const NavigationBar = ({ changeType }) => {
               );
             })}
           </Slider>
+          </Container>
         </div>
       </Container>
     </>
