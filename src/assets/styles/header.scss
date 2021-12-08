@@ -20,31 +20,30 @@
     .slick-slide {
       padding: 10px 0px;
       text-transform: uppercase;
-      width: 97px !important;
-      margin: 28px;
+      width: 95px !important;
+      margin: 55px;
       text-align: center;
       @media (max-width: 480px) {
         margin: 14px;
       }
     }
   }
+  .slick-list {
+    width: 83%;
+    margin: 0 auto;
+  }
 }
 
 .my-slick {
-  width: 57% !important;
-  margin: 0 auto;
   display: flex !important;
   flex-direction: column;
   align-items: center;
-  height: 120px;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
-
   .menu-name {
     padding-top: 24px;
     display: inline-block;
   }
-
   @media (max-width: 480px) {
     width: 100% !important;
     height: 170px;
@@ -61,4 +60,8 @@
 .active-item {
   filter: grayscale(0) !important;
   -webkit-filter: grayscale(0) !important;
+  background: #fff;
+  padding: 8px 0px 22px 0px;
+  border-radius: 100px;
+  font-weight: 700;
 }
