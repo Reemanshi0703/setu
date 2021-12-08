@@ -3,12 +3,10 @@ import {
   Container,
 } from "reactstrap";
 import bestSellers from "../../../../assets/images/bestsellers.png";
-import menuIcon from "../../../../assets/images/js-logo.png";
 import eye from "../../../../assets/images/eye.png";
 import skin from "../../../../assets/images/eye-skin.png";
 import sleep from "../../../../assets/images/sleep.png";
 import tummy from "../../../../assets/images/tummy.png";
-
 import Slider from "react-slick";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../../../assets/styles/main.scss";
