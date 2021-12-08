@@ -30,11 +30,11 @@ const CardComponent = ({
         </div>
         <CardBody>
           <CardTitle tag="h5">{`${type}:${title}`}</CardTitle>
-          <div className="skin-rating">
-            <div className="skin-rating-left">
+          <div className="rating">
+            <div className="rating-left">
               <img src={photoUrl} alt="PhotoUrl" /> <span>{type}</span>
             </div>
-            <div className="skin-rating-right">
+            <div className="rating-right">
               <span>{rating}</span> <img src={starIcon} alt="StarIcon" />
             </div>
           </div>

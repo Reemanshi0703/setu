@@ -137,11 +137,11 @@
       text-transform: capitalize;
       font-weight: 500;
     }
-    .skin-rating {
+    .rating {
       display: flex;
       justify-content: space-between;
       margin: 15px 0px 20px 0px;
-      .skin-rating-left {
+      .rating-left {
         display: flex;
         align-items: center;
         img {
@@ -150,7 +150,7 @@
           margin-right: 6px;
         }
       }
-      .skin-rating-right {
+      .rating-right {
         display: flex;
         align-items: center;
         span {

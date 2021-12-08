@@ -62,7 +62,9 @@ const Header = ({ onClick }) => {
             <div className="header-wrapper">
               {itemArray.map((item) => {
                 return (
-                  <div className="header-menu" onClick={() => {
+                  <div className={`header-menu ${
+                    item.name === activeItem ? "active-item" : ""
+                  }`} onClick={() => {
                     onItemClick(item.name);
                   }}>
                     <img
