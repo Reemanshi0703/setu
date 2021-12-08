@@ -1,6 +1,7 @@
 import { Col, Container, Row, Card, CardImg, CardTitle, CardBody, CardText, Button, FormGroup, Label, Input } from "reactstrap";
 import skinIcon from "../assets/images/skin.png";
-import starIcon from "../assets/images/star.png"
+import starIcon from "../assets/images/star.png";
+import cardImg from "../assets/images/card-img.png";
 
 function CardComponent({ description , discount, id, photoUrl, price, rating, title}) {
   console.log("props=", { description , discount, id, photoUrl, price, rating, title})
@@ -8,10 +9,10 @@ function CardComponent({ description , discount, id, photoUrl, price, rating, ti
     <>
       {/* <Container>
         <Row className="mt-5"> */}
-          <Col xl="12" md="4" lg="4">
+          <Col xl="12" md="4" lg="4" className="justify-content-center">
             <Card>
             <div className="flavour-wrapper">
-              <CardImg src="https://picsum.photos/256/186" alt="Card image cap" top width="100%" />
+              <CardImg src={cardImg} alt="Card image cap" top width="100%" />
               <Button className="change-flavour">
               {title}
               </Button>
@@ -25,7 +26,7 @@ function CardComponent({ description , discount, id, photoUrl, price, rating, ti
                     <img src={skinIcon} alt="skin"  /> <span>{title}</span>
                   </div>
                   <div className="skin-rating-right">
-                    <span>{rating}<img src={starIcon} /></span>
+                    <span>{rating}</span> <img src={starIcon} />
                   </div>
                 </div>
                 <CardText>

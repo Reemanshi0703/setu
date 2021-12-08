@@ -8,7 +8,7 @@ import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
-import { Container, Row } from "reactstrap";
+import { ButtonToggle, Container, Row } from "reactstrap";
 import * as data from "./data.json";
 import React, { useState } from "react";
 import Slider from "react-slick";
@@ -18,8 +18,8 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
+      className={`${className} slick-next`}
+      style={{ ...style, display: "block" }}
       onClick={onClick}
     />
   );
@@ -29,7 +29,7 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
+      className={`${className} slick-prev`}
       style={{ ...style, display: "block", background: "green" }}
       onClick={onClick}
     />

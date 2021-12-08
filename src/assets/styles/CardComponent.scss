@@ -10,21 +10,33 @@
   }
   .flavour-wrapper {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+      overflow: hidden;
     > img {
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
+      width: 272px;
+      padding: 50px;
+      
     }
     .change-flavour {
-      background-color: rgb(255, 233, 191);
+      background-color: #f9e8de;
       position: absolute;
-      left: 60%;
+      left: 68%;
       top: 5%;
       border-radius: 100px;
       font-weight: 300;
       border: none;
-      padding: 6px 23px 8px 23px;
-      font-size: 15px;
-      color: rgb(193, 128, 8);
+      width: 85px;
+      height: 24px;
+      font-size: 10px;
+      line-height: 12px;
+      color: #F36400;
       @media (max-width: 320px) {
         padding: 6px 13px 8px 13px;
         font-size: 12px;
@@ -72,32 +84,56 @@
     padding: 23px 16px 29px 16px;
     border-radius: 20px;
     .card-title {
-      font-size: 20px;
+      font-size: 18px;
+      text-transform: capitalize;
+      font-weight: 500;
     }
     .skin-rating {
       display: flex;
       justify-content: space-between;
       margin: 15px 0px 20px 0px;
+      .skin-rating-left {
+        display: flex;
+        align-items: center;
+        img {
+          width: 22.5px;
+          height: 22.5px;
+          margin-right: 6px;
+        }
+      }
+      .skin-rating-right {
+        display: flex;
+        align-items: center;
+        span {
+          font-size: 18px;
+          margin-right: 6px;
+          img {
+            margin-top: -4px;
+            margin-left: 4px;
+          }
+        }
+        
+      }
     }
     .pricing {
       display: flex;
       justify-content: space-between;
       .full-price {
-        font-size: 19px;
-        margin-right: 10px;
+        font-size: 18px;
+        margin-right: 4px;
       }
       .price-cut {
         text-decoration: line-through;
-        color: #787878;
-        font-size: 15px;
+        opacity: 0.5;
+        font-size: 14px;
       }
       .you-save {
-        color: #787878;
-        font-size: 15px;
+        color: #999999;
+        font-size: 14px;
       }
       .red-price {
         color: #f00;
-        font-size: 16px;
+        font-size: 14px;
       }
     }
   }
@@ -116,6 +152,8 @@
         border-right-color: #fff;
         border-right-color: #fff;
         border-right: 0;
+        font-size: 14px;
+        height: 40px;
       }
     }
     .bottom-cart-right {
@@ -126,6 +164,8 @@
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
         width: 100%;
+        height: 40px;
+        font-size: 16px;
         background-color: #000;
       }
       @media (min-width: 768px) and (max-width: 992px) {
