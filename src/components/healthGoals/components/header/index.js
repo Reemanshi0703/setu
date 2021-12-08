@@ -35,7 +35,8 @@ function SampleNextArrow(props) {
       />
     );
   }
-const itemArray = ["tummy", "eye", "skin", "sleep", "weight", "health", "hair"];
+const itemArray = [
+  {name:"tummy", img: menuIcon },  {name:"eye", img: menuIcon },  {name:"skin", img: menuIcon }, {name:"sleep", img: menuIcon }, {name:"weight", img: menuIcon }, {name:"health", img: menuIcon }, {name:"hair", img: menuIcon }];
 const settings = {
     centerMode: true,
 
@@ -111,10 +112,19 @@ function NavigationBar({ changeType }) {
           </div>
         </Container>
       </Navbar> */}
-      <Slider {...settings} ref={sliderRef}>
+      
+        <Container fluid>
+        <div className="navbar-brand">
+          <span className="bold-logo">Health</span>
+          <span className="normal-logo">Goals</span>
+        </div>
+        </Container>
+        
+      <Slider {...settings} ref={sliderRef} className="header">
           {itemArray.map((item, index) => {
-            return <div key={index} onClick={() => onItemClick(index)}><img src={menuIcon} alt="icon" />
-            <span className="menu-name">{item}</span>
+            return <div key={index} onClick={() => onItemClick(index)}>
+              <img src={item.img} alt="icon" />
+            <span className="menu-name">{item.name}</span>
             </div>;
           })}
         </Slider>
