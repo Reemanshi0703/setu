@@ -6,7 +6,6 @@ import {
   CardBody,
   CardText,
   Button,
-  Input,
 } from "reactstrap";
 import CategoryWeightSection from "./components/categoryWeightSection";
 import PriceSection  from "./components/priceSection";
