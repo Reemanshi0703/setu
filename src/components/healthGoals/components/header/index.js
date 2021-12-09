@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Container } from "reactstrap";
-import { itemArray, headerSliderSettings } from "../../utils";
-import Slider from "react-slick";
+import { itemArray } from "../../utils";
+import MobileHeader from "./mobileHeader";
+import DesktopHeader from "./desktopHeader";
 
 const Header = ({ onClick }) => {
   const [isDesktop, setIsDesktop] = useState(false);
   useEffect(() => {
-    handleResize()
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -32,54 +33,10 @@ const Header = ({ onClick }) => {
             <span className="bold-logo">Health</span>
             <span className="normal-logo">Goals</span>
           </div>
-          {!isDesktop ? (
-            <Slider {...headerSliderSettings} className="header">
-              {itemArray.map((item) => {
-                return (
-                  <div
-                    key={item.name}
-                    onClick={() => {
-                      onItemClick(item.name);
-                    }}
-                    className={`my-slick ${
-                      item.name === activeItem ? "active-item" : ""
-                    }`}
-                  >
-                    <img
-                      src={
-                        item.name === activeItem
-                          ? item.activeImg
-                          : item.inActiveImg
-                      }
-                      alt="icon"
-                    />
-                    <span className="menu-name">{item.name}</span>
-                  </div>
-                );
-              })}
-            </Slider>
+          {isDesktop ? (
+            <DesktopHeader onClick={onItemClick} activeItem={activeItem}/>
           ) : (
-            <div className="header-wrapper">
-              {itemArray.map((item) => {
-                return (
-                  <div className={`header-menu ${
-                    item.name === activeItem ? "active-item" : ""
-                  }`} onClick={() => {
-                    onItemClick(item.name);
-                  }}>
-                    <img
-                      src={
-                        item.name === activeItem
-                          ? item.activeImg
-                          : item.inActiveImg
-                      }
-                      alt="icon"
-                    />
-                    <p className="menu-name">{item.name}</p>
-                  </div>
-                );
-              })}
-            </div>
+            <MobileHeader onClick={onItemClick} activeItem={activeItem} />
           )}
         </div>
       </Container>

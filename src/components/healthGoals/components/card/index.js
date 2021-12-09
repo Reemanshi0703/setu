@@ -8,7 +8,9 @@ import {
   Button,
   Input,
 } from "reactstrap";
-import starIcon from "../../../../assets/images/star.png";
+import CategoryWeightSection from "./components/categoryWeightSection";
+import PriceSection  from "./components/priceSection";
+import RatingSection  from "./components/ratingSection";
 import cardImg from "../../../../assets/images/card-img.png";
 
 const CardComponent = ({
@@ -30,42 +32,11 @@ const CardComponent = ({
         </div>
         <CardBody>
           <CardTitle tag="h5">{`${type}:${title}`}</CardTitle>
-          <div className="rating">
-            <div className="rating-left">
-              <img src={photoUrl} alt="PhotoUrl" /> <span>{type}</span>
-            </div>
-            <div className="rating-right">
-              <span>{rating}</span> <img src={starIcon} alt="StarIcon" />
-            </div>
-          </div>
+          <RatingSection photoUrl={photoUrl} type={type} rating={rating}/>
           <CardText>{description}</CardText>
-          <div className="pricing">
-            <div className="pricing-left">
-              <span className="full-price">&#x20b9;{price - discount}</span>{" "}
-              <span className="price-cut">&#x20b9;{price}</span>
-            </div>
-            <div className="pricing-right">
-              <span className="you-save">You Save:</span>{" "}
-              <span className="red-price">
-                &#x20b9;
-                {`${discount} Rs (${Math.round((discount / price) * 100)})%`}
-              </span>
-            </div>
-          </div>
+          <PriceSection price={price} discount={discount}/>
         </CardBody>
-        <CardBody className="bottom-cart">
-          <div className="bottom-cart-left">
-            <Input id="exampleSelect" name="select" type="select">
-              <option>120 gms</option>
-              <option>130 gms</option>
-              <option>140 gms</option>
-              <option>150 gms</option>
-            </Input>
-          </div>
-          <div className="bottom-cart-right">
-            <Button className="add-btn">Add</Button>
-          </div>
-        </CardBody>
+        <CategoryWeightSection/>
       </Card>
     </Col>
   );
