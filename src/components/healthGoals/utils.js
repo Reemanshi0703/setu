@@ -12,7 +12,7 @@ import skinInactive from "../../assets/images/skinLinear.png";
 import sleepInactive from "../../assets/images/sleepLinear.png";
 import tummyInactive from "../../assets/images/tummyLinear.png";
 
-export const itemArray = [
+export const CATEGORIES_ARRAY = [
   { name: "tummy", activeImg: tummy, inActiveImg: tummyInactive },
   { name: "eye", activeImg: eye , inActiveImg: eyeInactive},
   { name: "skin", activeImg: skin , inActiveImg: skinInactive},
@@ -55,7 +55,7 @@ export const getCardSliderSettings = (length) => {
   };
 };
 
-export const headerSliderSettings = {
+export const HEADER_SLIDER_SETTINGS = {
   centerMode: true,
   dots: false,
   slidesToShow: 7,
@@ -92,7 +92,7 @@ export const headerSliderSettings = {
   ],
 };
 
-export const data = {
+export const CATEGORIES_RECORDS = {
   eye: [
     {
       id: 1,

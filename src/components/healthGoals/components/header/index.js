@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container } from "reactstrap";
-import { itemArray } from "../../utils";
+import { CATEGORIES_ARRAY } from "../../utils";
 import MobileHeader from "./mobileHeader";
 import DesktopHeader from "./desktopHeader";
 
@@ -20,7 +20,7 @@ const Header = ({ onClick }) => {
       setIsDesktop(true);
     }
   };
-  const [activeItem, setActiveItem] = useState(itemArray[0].name);
+  const [activeItem, setActiveItem] = useState(CATEGORIES_ARRAY[0].name);
   const onItemClick = (item) => {
     setActiveItem(item);
     onClick(item);

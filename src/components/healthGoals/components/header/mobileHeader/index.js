@@ -1,11 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
-import { itemArray, headerSliderSettings } from "../../../utils";
+import { CATEGORIES_ARRAY, HEADER_SLIDER_SETTINGS } from "../../../utils";
 
 const MobileHeader = ({ onClick, activeItem }) => {
   return (
-    <Slider {...headerSliderSettings} className="header">
-      {itemArray.map((item) => {
+    <Slider {...HEADER_SLIDER_SETTINGS} className="header">
+      {CATEGORIES_ARRAY.map((item) => {
         return (
           <div
             key={item.name}

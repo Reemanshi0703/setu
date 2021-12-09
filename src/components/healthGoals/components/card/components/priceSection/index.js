@@ -10,7 +10,7 @@ const PriceSection = ({price, discount}) => {
               <span className="you-save">You Save:</span>{" "}
               <span className="red-price">
                 &#x20b9;
-                {`${discount} Rs (${Math.round((discount / price) * 100)})%`}
+                {`${discount} (${Math.round((discount / price) * 100)})%`}
               </span>
             </div>
           </div>

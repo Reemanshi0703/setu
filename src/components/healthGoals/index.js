@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Header from "./components/header";
-import {data} from "./utils";
+import {CATEGORIES_RECORDS} from "./utils";
 import CardContainer from "./components/cardContainer";
 
 const HealthGoals = () => {
-  const [dataToDisplay, setDataToDisplay] = useState(data.eye);
+  const [dataToDisplay, setDataToDisplay] = useState(CATEGORIES_RECORDS.eye);
   const changeHealthType = (type) => {
-    setDataToDisplay(data[type]);
+    setDataToDisplay(CATEGORIES_RECORDS[type]);
   };
 
   return (

@@ -1,10 +1,10 @@
 import React from "react";
-import { itemArray } from "../../../utils";
+import { CATEGORIES_ARRAY } from "../../../utils";
 
 const DesktopHeader = ({ onClick, activeItem }) => {
   return (
     <div className="header-wrapper">
-      {itemArray.map((item) => {
+      {CATEGORIES_ARRAY.map((item) => {
         return (
           <div
             className={`header-menu ${

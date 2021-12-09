@@ -30,7 +30,7 @@ const CardComponent = ({
           <Button className="change-flavour">{flavour}</Button>
         </div>
         <CardBody>
-          <CardTitle tag="h5">{`${type}:${title}`}</CardTitle>
+          <CardTitle tag="h5">{`${type}: ${title}`}</CardTitle>
           <RatingSection photoUrl={photoUrl} type={type} rating={rating}/>
           <CardText>{description}</CardText>
           <PriceSection price={price} discount={discount}/>
